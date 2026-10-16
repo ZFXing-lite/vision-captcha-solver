@@ -1,0 +1,41 @@
+{
+  "name": "vision-captcha-solver",
+  "version": "1.0.0",
+  "description": "Solve image-based captcha challenges with a vision model. Pure image in, click coordinates out. Zero runtime dependencies.",
+  "main": "src/index.js",
+  "files": [
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/offline.test.js",
+    "test:online": "node test/online.test.js",
+    "example:basic": "node examples/01-basic.js",
+    "example:playwright": "node examples/02-playwright.js"
+  },
+  "keywords": [
+    "captcha",
+    "captcha-solver",
+    "vision",
+    "vision-model",
+    "vlm",
+    "image-recognition",
+    "object-detection",
+    "hcaptcha",
+    "automation",
+    "playwright"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependencies": {
+    "playwright": ">=1.40.0"
+  },
+  "peerDependenciesMeta": {
+    "playwright": {
+      "optional": true
+    }
+  },
+  "license": "MIT"
+}
